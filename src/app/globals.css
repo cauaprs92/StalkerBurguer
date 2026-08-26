@@ -47,3 +47,5 @@ footer { background: var(--ink); color: white; padding: 75px 10vw 25px; }.footer
 }
 
 .hero-image { object-fit: contain; object-position: center; }
+.card-1 .menu-image img { object-fit: contain; }
+.card-3 .menu-image img { object-fit: contain; }
