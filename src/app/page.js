@@ -15,8 +15,15 @@ const units = [
   ["Zona Leste", "Av. das Rosas, 609", "Jardim Motorama", "12 97405-1935"],
 ];
 
+const menuPages = [
+  { label: "Lanches · 01", image: "/images/cardapio1-lanches-StalkerBurguer.png", alt: "Primeira página do cardápio de lanches Stalker Burger" },
+  { label: "Lanches · 02", image: "/images/cardapio2-lanches-StalkerBurguer.png", alt: "Segunda página do cardápio de lanches Stalker Burger" },
+  { label: "Almoço", image: "/images/cardapio-almoco-StalkerBurguer.jpeg", alt: "Cardápio de almoço da Stalker Burger" },
+];
+
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [activeMenuPage, setActiveMenuPage] = useState(0);
 
   return (
     <main>
@@ -66,16 +73,22 @@ export default function Home() {
             </article>
           ))}
         </div>
-        <div className="menu-materials">
-          <article className="menu-material menu-material-pdf">
-            <div className="material-header"><div><p className="eyebrow dark-eyebrow">cardápio completo</p><h3>Lanches</h3></div><a className="material-link" href="/images/cardapio-lanches-StalkerBurguer.pdf" target="_blank" rel="noreferrer">Abrir PDF <span>↗</span></a></div>
-            <iframe title="Cardápio de lanches Stalker Burger" src="/images/cardapio-lanches-StalkerBurguer.pdf" />
-          </article>
-          <article className="menu-material menu-material-lunch">
-            <div className="material-header"><div><p className="eyebrow dark-eyebrow">para qualquer hora</p><h3>Almoço</h3></div><span className="material-tag">menu da casa</span></div>
-            <div className="lunch-preview"><Image src="/images/cardapio-almoco-StalkerBurguer.jpeg" alt="Cardápio de almoço da Stalker Burger" fill sizes="(max-width: 760px) 88vw, 40vw" /></div>
-          </article>
-        </div>
+        <article className="menu-material menu-gallery">
+          <div className="material-header">
+            <div><p className="eyebrow dark-eyebrow">cardápio completo</p><h3>Veja tudo</h3></div>
+            <span className="material-tag">{activeMenuPage + 1} / {menuPages.length}</span>
+          </div>
+          <div className="menu-gallery-view">
+            <Image src={menuPages[activeMenuPage].image} alt={menuPages[activeMenuPage].alt} fill sizes="(max-width: 760px) 88vw, 70vw" />
+          </div>
+          <div className="menu-gallery-controls" aria-label="Páginas do cardápio">
+            {menuPages.map((page, index) => (
+              <button className={index === activeMenuPage ? "is-active" : ""} key={page.label} onClick={() => setActiveMenuPage(index)} aria-label={`Ver ${page.label}`} aria-pressed={index === activeMenuPage}>
+                <span>0{index + 1}</span>{page.label}
+              </button>
+            ))}
+          </div>
+        </article>
         <div className="menu-note"><span>feito para abrir o apetite</span><p>Escolha seu favorito, reúna a família<br />e venha viver a experiência.</p><a href="#unidades">Encontrar unidade <span>↗</span></a></div>
       </section>
 

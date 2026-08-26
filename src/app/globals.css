@@ -1,3 +1,20 @@
+/* Cardápio em imagens navegáveis */
+.menu-gallery { margin-top: 58px; }
+.menu-gallery-view { position: relative; min-height: 620px; overflow: hidden; background: #ece8dd; }
+.menu-gallery-view img { object-fit: contain; }
+.menu-gallery-controls { display: flex; gap: 10px; margin-top: 16px; }
+.menu-gallery-controls button { flex: 1; border: 1px solid #cbc8bd; background: transparent; color: var(--muted); cursor: pointer; padding: 14px 16px; text-align: left; text-transform: uppercase; font-size: 10px; font-weight: bold; letter-spacing: 1px; transition: background .2s, color .2s, border-color .2s; }
+.menu-gallery-controls button span { color: #9a968b; font: 14px Impact, sans-serif; margin-right: 10px; }
+.menu-gallery-controls button:hover, .menu-gallery-controls button.is-active { background: var(--yellow); border-color: var(--yellow); color: var(--ink); }
+.menu-gallery-controls button.is-active span { color: var(--ink); }
+
+@media (max-width: 760px) {
+	.menu-gallery { margin-top: 40px; }
+	.menu-gallery-view { min-height: 450px; }
+	.menu-gallery-controls { gap: 6px; }
+	.menu-gallery-controls button { padding: 12px 9px; font-size: 8px; letter-spacing: .5px; }
+	.menu-gallery-controls button span { display: block; margin: 0 0 5px; }
+}
 @import "tailwindcss";
 
 :root { --ink: #11110f; --paper: #f3f0e9; --yellow: #f4dc00; --muted: #6d6b62; }
