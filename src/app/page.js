@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 
 const menuItems = [
-  ["Monster Burger", "Duplo smash, cheddar, bacon e molho Stalker.", "lanche1_stalkerburguer.png"],
+  ["STALKER BURGUER", "Duplo smash, cheddar, bacon e molho Stalker.", "stalkerburguer-StalkerBurguer.png"],
   ["Piscina Cheddar", "Crocante por fora, cremoso no centro e impossível de ignorar.", "piscinacheddar-StalkerBurguer.png"],
   ["X Honey", "Blend artesanal, queijo coalho e o toque doce do mel.", "lache-queijudo-StalkerBurguer.png"],
   ["SORVETE FRITO", "Crocante e gelado, experiência única.", "lanche4_stalkerburguer.png"],
