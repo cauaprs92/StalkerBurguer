@@ -26,6 +26,7 @@ footer { background: var(--ink); color: white; padding: 75px 10vw 25px; }.footer
 .menu-gallery-controls button span { color: #9a968b; font: 14px Impact, sans-serif; margin-right: 10px; }
 .menu-gallery-controls button:hover, .menu-gallery-controls button.is-active { background: var(--yellow); border-color: var(--yellow); color: var(--ink); }
 .menu-gallery-controls button.is-active span { color: var(--ink); }
+.best-sellers-note { display: inline-block; margin: 24px 0 0; padding: 9px 12px; background: var(--yellow); color: var(--ink); text-transform: uppercase; font: 12px Impact, sans-serif; letter-spacing: 1px; transform: rotate(-2deg); }
 
 @media (max-width: 760px) {
 	.hero { min-height: 100svh; height: auto; padding: 105px 8vw 72px; align-items: center; }
@@ -40,6 +41,7 @@ footer { background: var(--ink); color: white; padding: 75px 10vw 25px; }.footer
 	.menu-gallery-controls { gap: 6px; }
 	.menu-gallery-controls button { padding: 12px 9px; font-size: 8px; letter-spacing: .5px; }
 	.menu-gallery-controls button span { display: block; margin: 0 0 5px; }
+	.best-sellers-note { margin-top: 18px; font-size: 11px; }
 	.menu-note p { width: 100%; }
 	.menu-note a { margin-left: 0; }
 }

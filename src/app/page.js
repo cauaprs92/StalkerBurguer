@@ -62,7 +62,7 @@ export default function Home() {
 
       <section className="section menu-section" id="cardapio">
         <div className="section-heading">
-          <div><p className="eyebrow dark-eyebrow">o motivo da visita</p><h2>Escolha seu<br /><span>stalker.</span></h2></div>
+          <div><p className="eyebrow dark-eyebrow">o motivo da visita</p><h2>Escolha seu<br /><span>stalker.</span></h2><p className="best-sellers-note">Os mais vendidos da casa</p></div>
           <div className="heading-side"><p>Receitas autorais, ingredientes de verdade e aquele tipo de lanche que pede uma foto antes da primeira mordida.</p><a className="text-link" href="#contato">Quero pedir <span>↗</span></a></div>
         </div>
         <div className="menu-grid">
