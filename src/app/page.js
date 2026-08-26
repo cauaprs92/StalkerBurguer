@@ -93,7 +93,7 @@ export default function Home() {
       </section>
 
       <section className="experience" id="sobre">
-        <div className="experience-photo"><Image src="/images/lanche8-StalkerBurguer.jpg" alt="Lanche artesanal Stalker Burger" fill sizes="50vw" /></div>
+        <div className="experience-photo"><Image src="/images/lanche5_stalkerburguer.png" alt="Lanche artesanal Stalker Burger" fill sizes="50vw" /></div>
         <div className="experience-copy"><p className="eyebrow">mais que um hambúrguer</p><h2>Uma experiência<br /><span>para ficar.</span></h2><p>A Stalker nasceu para transformar o tradicional rolê de comer fora em um programa completo. Aqui, cada detalhe tem gosto de descoberta: do primeiro olhar ao último pedaço.</p><div className="pillars"><div><strong>01</strong><span>Atendimento<br />de verdade</span></div><div><strong>02</strong><span>Espaço<br />temático</span></div><div><strong>03</strong><span>Qualidade<br />sempre</span></div></div></div>
       </section>
 
