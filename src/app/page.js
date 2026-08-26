@@ -37,7 +37,7 @@ export default function Home() {
       </nav>
 
       <section className="hero" id="inicio">
-        <Image className="hero-image" src="/images/fachada.webp" alt="Fachada da Stalker Burger" fill priority sizes="100vw" />
+        <Image className="hero-image" src="/images/faixada-andromeda=StalkerBurguer.webp" alt="Fachada da Stalker Burger na unidade Andrômeda" fill priority sizes="100vw" />
         <div className="hero-shade" />
         <div className="hero-content">
           <p className="eyebrow">São José dos Campos · desde 2015</p>
@@ -66,7 +66,17 @@ export default function Home() {
             </article>
           ))}
         </div>
-        <div className="menu-note"><span>Cardápio ilustrativo</span><Image src="/images/cardapio-almoco.jpeg" alt="Prévia do cardápio Stalker Burger" width={80} height={80} /><p>Tem muito mais para descobrir<br />no nosso cardápio.</p><a href="#contato">Ver tudo <span>↗</span></a></div>
+        <div className="menu-materials">
+          <article className="menu-material menu-material-pdf">
+            <div className="material-header"><div><p className="eyebrow dark-eyebrow">cardápio completo</p><h3>Lanches</h3></div><a className="material-link" href="/images/cardapio-lanches-StalkerBurguer.pdf" target="_blank" rel="noreferrer">Abrir PDF <span>↗</span></a></div>
+            <iframe title="Cardápio de lanches Stalker Burger" src="/images/cardapio-lanches-StalkerBurguer.pdf" />
+          </article>
+          <article className="menu-material menu-material-lunch">
+            <div className="material-header"><div><p className="eyebrow dark-eyebrow">para qualquer hora</p><h3>Almoço</h3></div><span className="material-tag">menu da casa</span></div>
+            <div className="lunch-preview"><Image src="/images/cardapio-almoco-StalkerBurguer.jpeg" alt="Cardápio de almoço da Stalker Burger" fill sizes="(max-width: 760px) 88vw, 40vw" /></div>
+          </article>
+        </div>
+        <div className="menu-note"><span>feito para abrir o apetite</span><p>Escolha seu favorito, reúna a família<br />e venha viver a experiência.</p><a href="#unidades">Encontrar unidade <span>↗</span></a></div>
       </section>
 
       <section className="experience" id="sobre">
