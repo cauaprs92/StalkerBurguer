@@ -44,7 +44,7 @@ export default function Home() {
       </nav>
 
       <section className="hero" id="inicio">
-        <Image className="hero-image" src="/images/faixada-StalkerBurguer.png" alt="Fachada da Stalker Burger" fill priority sizes="100vw" />
+        <Image className="hero-image" src="/images/faixada-motorama-StalkerBurguer.png" alt="Fachada da unidade Motorama da Stalker Burger" fill priority sizes="100vw" />
         <div className="hero-shade" />
         <div className="hero-content">
           <p className="eyebrow">São José dos Campos · desde 2015</p>
