@@ -7,7 +7,7 @@ const menuItems = [
   ["Monster Burger", "Duplo smash, cheddar, bacon e molho Stalker.", "lanche1_stalkerburguer.png"],
   ["Piscina Cheddar", "Crocante por fora, cremoso no centro e impossível de ignorar.", "piscinacheddar-StalkerBurguer.png"],
   ["X Honey", "Blend artesanal, queijo coalho e o toque doce do mel.", "lache-queijudo-StalkerBurguer.png"],
-  ["Costela Stalker", "Costela desfiada, queijo derretido e pão macio.", "lanche4_stalkerburguer.png"],
+  ["SORVETE FRITO", "Crocante e gelado, experiência única.", "lanche4_stalkerburguer.png"],
 ];
 
 const units = [
